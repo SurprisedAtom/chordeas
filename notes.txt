@@ -1,0 +1,11 @@
+Tasks
+----------------
+
+- Render the progressions with the explanations
+- Save the selected progression to state
+- Split components into pages with react router
+- Create a global context
+- Update the global context based on the Url
+- Show the correct page with conditional rendering using the global context
+- Style the components / pages + add the logo
+- Animate the components and pages using framer motion
