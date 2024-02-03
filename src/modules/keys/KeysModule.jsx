@@ -1,8 +1,8 @@
-import React from "react";
-import Itemtile from "./components/itemtile/itemtile";
-import musical_keys from "../../utils/musical_keys_data";
+import { useState } from "react";
+import Itemtile from "../../components/itemtile/Itemtile";
+import { musical_keys } from "../../utils";
 
-function Keys_module() {
+function KeysModule() {
   const [chosenKey, setChosenKey] = useState("");
 
   const handleKeyClick = (index) => {
@@ -26,8 +26,9 @@ function Keys_module() {
           />
         ))}
       </ul>
+      THis is the keys module
     </div>
   );
 }
 
-export default Keys_module;
+export default KeysModule;

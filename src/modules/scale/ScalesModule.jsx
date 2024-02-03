@@ -1,6 +1,6 @@
-import React from "react";
+import { useState } from "react";
 
-function ChooseScale() {
+function ScalesModule() {
   const [selectedScale, setSelectedScale] = useState("No key selected");
 
   const handleScaleChange = (event) => {
@@ -38,4 +38,4 @@ function ChooseScale() {
   );
 }
 
-export default ChooseScale;
+export default ScalesModule;
