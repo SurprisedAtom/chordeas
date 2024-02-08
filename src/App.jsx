@@ -1,30 +1,32 @@
-import { useState } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Key from "./pages/Key";
-import Progression from "./pages/Progression";
-import Scale from "./pages/Scale";
+// import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./pages/Main";
+import Result from "./pages/Result";
+
+// function App() {
+//   const router = createBrowserRouter([
+//     {
+//       path: "/",
+//       element: <Main />,
+//     },
+//     {
+//       path: "/result/:key:/scale/:progression",
+//       element: <Result />,
+//     },
+//   ]);
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Key />,
-    },
-    {
-      path: "key",
-      element: <Key />,
-    },
-    {
-      path: "progression",
-      element: <Progression />,
-    },
-    {
-      path: "scale",
-      element: <Scale />,
-    },
-  ]);
-
-  return <RouterProvider router={router} />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Main />} />
+        <Route
+          path="/result/:key?/:scale?/:progression?"
+          element={<Result />}
+        />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

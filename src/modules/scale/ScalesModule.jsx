@@ -23,15 +23,32 @@ function ScalesModule() {
           />
           Major Scale
         </label>
-
         <label>
           <input
             type="radio"
-            value="minor"
-            checked={selectedScale === "minor"}
+            value="minor-natural"
+            checked={selectedScale === "minor-natural"}
             onChange={handleScaleChange}
           />
-          Minor Scale
+          Natural Minor Scale
+        </label>
+        <label>
+          <input
+            type="radio"
+            value="minor-melodic"
+            checked={selectedScale === "minor-melodic"}
+            onChange={handleScaleChange}
+          />
+          Melodic Minor
+        </label>
+        <label>
+          <input
+            type="radio"
+            value="minor-harmonic"
+            checked={selectedScale === "minor-harmonic"}
+            onChange={handleScaleChange}
+          />
+          Harmonic Scale
         </label>
       </div>
     </div>

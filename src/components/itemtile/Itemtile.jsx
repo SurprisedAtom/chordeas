@@ -1,5 +1,3 @@
-import React from "react";
-
 function itemtile({ prop, onClick }) {
   return (
     <li

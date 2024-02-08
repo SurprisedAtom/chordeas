@@ -1,4 +1,3 @@
-import React from "react";
 import ProgressionsModule from "../modules/progression/ProgressionsModule";
 
 function Progression() {
