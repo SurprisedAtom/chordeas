@@ -6,7 +6,7 @@ const Navbar = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 15px 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   a {
     color: #ffffff;
@@ -16,7 +16,7 @@ const Navbar = styled.div`
   }
 `;
 
-function nav() {
+function Nav() {
   return (
     <Navbar>
       <div>
@@ -29,4 +29,4 @@ function nav() {
   );
 }
 
-export default nav;
+export default Nav;

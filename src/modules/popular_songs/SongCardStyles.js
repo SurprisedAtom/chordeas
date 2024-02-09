@@ -6,13 +6,21 @@ background-color: #00000077;
 background-position: center;
 background-size: cover;
 background-blend-mode: multiply;
-padding: 10px;
-font-size: 16px;
+padding: 15px;
+font-size: 15px;
 min-height: 12em;
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
 flex-grow: 1;
+
+p{
+    font-weight: 300;
+}
+
+span{
+    font-weight: 600;
+}
 
 &:hover{
     cursor: pointer;

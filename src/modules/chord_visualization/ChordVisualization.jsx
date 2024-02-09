@@ -13,6 +13,8 @@ function ChordVisualization(props) {
     progressionResult.push(chords[chordDigit - 1]);
   });
 
+  console.log(progressionResult);
+
   return <div></div>;
 }
 

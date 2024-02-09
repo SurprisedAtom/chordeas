@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Dropdown = styled.select`
     border: 1px solid #ffffff;
-    width: 90%;
+    width: 100%;
     padding: 10px 10px;
     margin-top: 10px;
     background-color: grey;

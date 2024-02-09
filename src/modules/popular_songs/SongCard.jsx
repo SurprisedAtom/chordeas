@@ -5,11 +5,15 @@ function SongCard(props) {
   console.log(cover);
   return (
     <SongCardContainer background={cover}>
-      <div>
-        {title} by {artist}
-      </div>
-      <p>Key: {key}</p>
-      <p>Progression: {chordProgression}</p>
+      <p>
+        <span>{title}</span> by {artist}
+      </p>
+      <p>
+        <span>Key:</span> {key}
+      </p>
+      <p>
+        <span>Progression:</span> {chordProgression}
+      </p>
     </SongCardContainer>
   );
 }

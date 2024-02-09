@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import App_container from "../styled-components/app-container";
+import App_container from "../styled-components/App_container";
 import styled from "styled-components";
 import Nav from "../components/nav/Nav";
 import Button from "../styled-components/Button";
@@ -9,6 +9,7 @@ import Title from "../styled-components/Title";
 import Container from "../styled-components/Container";
 import Dropdown from "../styled-components/Dropdown";
 import PopularSongs from "../modules/popular_songs/PopularSongs";
+import Flex from "../styled-components/Flex";
 
 function Main() {
   const navigate = useNavigate();
@@ -38,12 +39,6 @@ function Main() {
     navigate(`/result/${keyValue}/${scaleValue}/${progressionValue}`);
   };
 
-  const Flex = styled.div`
-    display: flex;
-    padding: ${(props) => props.padding};
-    margin: ${(props) => props.margin};
-  `;
-
   return (
     <App_container>
       <Nav />
@@ -56,12 +51,12 @@ function Main() {
             popular progression.
           </p>
         </div>
-        <Container padding="0px 0px 0px 40px">
+        <Container display="flex" justify="flex-end" padding="0px 0px 0px 40px">
           <Button onClick={generateChord}>Generate</Button>
         </Container>
       </Flex>
-      <Flex margin="40px 0px 0px 0px">
-        <Container flex="1">
+      <Flex margin="40px 0px 0px 0px" mr="10px">
+        <Container width="100%">
           <p>Select a key: {keyValue}</p>
           <Dropdown
             name="key"
@@ -83,7 +78,7 @@ function Main() {
             <option value="B">B</option>
           </Dropdown>
         </Container>
-        <Container flex="1">
+        <Container width="100%">
           <p>Select a scale: {scaleValue} </p>
           <Dropdown
             name="scale"
@@ -97,7 +92,7 @@ function Main() {
             <option value="Harmonic-Minor">Harmonic Minor</option>
           </Dropdown>
         </Container>
-        <Container flex="1">
+        <Container width="100%">
           <p>Select a progression: {progressionValue}</p>
           <Dropdown
             name="chordProgression"

@@ -1,5 +1,7 @@
 import { ChordsOuput, ChordVisualization } from "../modules";
 import { useParams } from "react-router-dom";
+import App_container from "../styled-components/App_container";
+import Nav from "../components/nav/Nav";
 
 function Result() {
   // const location = useLocation();
@@ -14,10 +16,11 @@ function Result() {
   };
 
   return (
-    <div className="app-body">
+    <App_container>
+      <Nav />
       <ChordsOuput chordData={chordData} />
       <ChordVisualization chordData={chordData} />
-    </div>
+    </App_container>
   );
 }
 
