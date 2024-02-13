@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-const Dropdown = styled.select`
+export const Option = styled.option`
+`
+
+
+export const Dropdown = styled.select`
     border: 1px solid #ffffff;
     width: 100%;
     padding: 10px 10px;
@@ -12,6 +16,7 @@ const Dropdown = styled.select`
     &:hover{
         cursor: pointer;
     }
-`;
 
-export default Dropdown
+    
+
+`;

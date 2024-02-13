@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const SongCardContainer = styled.div`
-background-image: url(${props => props.background}),linear-gradient(176deg, rgb(92 169 255 / 74%) 0%, rgb(0 0 0) 100%);
+background-image: url(${props => props.$background}),linear-gradient(176deg, rgb(92 169 255 / 74%) 0%, rgb(0 0 0) 100%);
 background-color: #00000077;
 background-position: center;
 background-size: cover;

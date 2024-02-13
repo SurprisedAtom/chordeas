@@ -2,18 +2,19 @@ import { ChordsOuput, ChordVisualization } from "../modules";
 import { useParams } from "react-router-dom";
 import App_container from "../styled-components/App_container";
 import Nav from "../components/nav/Nav";
+import { returnChordsFromScale } from "../utils";
+import MainInputs from "../modules/main_inputs/MainInputs";
 
 function Result() {
-  // const location = useLocation();
   const params = useParams();
   const { key, scale, progression } = useParams();
-  console.log(params);
-  // const { key, scale, progression } = location.state;
   const chordData = {
     selectedKey: key,
     selectedScale: scale,
     selectedProgression: progression,
   };
+
+  // console.log("Progression", returnChordsFromScale(key, scale));
 
   return (
     <App_container>

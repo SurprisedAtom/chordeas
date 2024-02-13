@@ -1,31 +1,25 @@
-// import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "./pages/Main";
-import Result from "./pages/Result";
+import { ThemeProvider } from "styled-components";
+import Router from "./router/Router";
 
-// function App() {
-//   const router = createBrowserRouter([
-//     {
-//       path: "/",
-//       element: <Main />,
-//     },
-//     {
-//       path: "/result/:key:/scale/:progression",
-//       element: <Result />,
-//     },
-//   ]);
+let ThemeLight = {
+  white: "#ffffff",
+  black: "#000000",
+  blue: "#7FC1FE",
+};
+
+let ThemeDark = {
+  white: "#ffffff",
+  black: "#000000",
+  blue: "#69e715",
+};
+
+let toggleTheme = false;
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Main />} />
-        <Route
-          path="/result/:key?/:scale?/:progression?"
-          element={<Result />}
-        />
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider theme={toggleTheme ? ThemeDark : ThemeLight}>
+      <Router />
+    </ThemeProvider>
   );
 }
 

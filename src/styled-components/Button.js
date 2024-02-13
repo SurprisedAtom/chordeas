@@ -6,7 +6,7 @@ const Button = styled.button`
   padding: 15px 40px;
   display: block;
   border: none;
-  margin: ${props => props.margin};
+  margin: ${props => props.$margin};
 
   &:hover{
     cursor: pointer;

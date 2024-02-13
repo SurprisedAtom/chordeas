@@ -7,7 +7,7 @@ import Heading from "../../styled-components/Heading.styles";
 function PopularSongs() {
   return (
     <>
-      <Heading size="15px" mt="40px">
+      <Heading $size="15px" $mt="40px">
         Progressions for popular songs:
       </Heading>
       <SongsContainer>

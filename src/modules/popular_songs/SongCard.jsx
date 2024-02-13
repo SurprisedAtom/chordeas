@@ -2,9 +2,8 @@ import SongCardContainer from "./SongCardStyles";
 
 function SongCard(props) {
   let { title, artist, key, chordProgression, cover } = props.data;
-  console.log(cover);
   return (
-    <SongCardContainer background={cover}>
+    <SongCardContainer $background={cover}>
       <p>
         <span>{title}</span> by {artist}
       </p>
