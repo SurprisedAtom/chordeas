@@ -18,3 +18,5 @@ Perfect for beginners who are learning chords and want a visual aid.
 User-friendly design for musicians of all levels.
 Intuitive controls for easy navigation.
 Learn and experiment with chords effortlessly.
+
+![chordeas - screenshot](https://github.com/SurprisedAtom/chordeas/assets/93035184/54a19237-d39f-4a3e-ac0e-f5888e85428b)
