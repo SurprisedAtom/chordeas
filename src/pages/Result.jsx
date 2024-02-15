@@ -1,9 +1,9 @@
 import { ChordsOuput, ChordVisualization } from "../modules";
 import { useParams } from "react-router-dom";
 import App_container from "../styled-components/App_container";
-import Nav from "../components/nav/Nav";
 import { returnChordsFromScale } from "../utils";
 import MainInputs from "../modules/main_inputs/MainInputs";
+import Nav from "../modules/nav/Nav";
 
 function Result() {
   const params = useParams();
