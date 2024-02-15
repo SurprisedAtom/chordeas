@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import App_container from "../styled-components/App_container";
-import Nav from "../components/nav/Nav";
+import Nav from "../components/nav/Nav.jsx";
 import Button from "../styled-components/Button";
 import Title from "../styled-components/Title";
 import Container from "../styled-components/Container";
