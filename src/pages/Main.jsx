@@ -8,6 +8,7 @@ import Container from "../styled-components/Container";
 import PopularSongs from "../modules/popular_songs/PopularSongs";
 import Flex from "../styled-components/Flex";
 import MainInputs from "../modules/main_inputs/MainInputs";
+import Nav from "../modules/nav/Nav";
 
 function Main() {
   const navigate = useNavigate();
