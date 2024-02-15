@@ -4,7 +4,7 @@ import Title from "../../styled-components/Title";
 import ResultBlock from "../../styled-components/Result_block";
 import * as Tone from "tone";
 
-function chordsOuput(props) {
+function ChordsOuput(props) {
   let { selectedKey, selectedScale, selectedProgression } = props.chordData;
 
   // const playChord = () => {
@@ -51,4 +51,4 @@ function chordsOuput(props) {
   );
 }
 
-export default chordsOuput;
+export default ChordsOuput;
