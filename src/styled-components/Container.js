@@ -23,6 +23,10 @@ const Container = styled.div`
 
     @media ${device.sm}{
         padding: 0px;
+        div:not(:last-child){
+    border-right: 0px;
+    margin-right: 0px;
+    }
     }
 
     @media ${device.lg}{
