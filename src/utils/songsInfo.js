@@ -6,22 +6,25 @@ const songsInfo = [
     {
       title: "Wonderwall",
       artist: "Oasis",
-      key: "F major",
-      chordProgression: "VI - IV - I - V",
+      key: "F",
+      scale: "Major",
+      chordProgression: "VI-IV-I-V",
       cover: oasis
     },
     {
       title: "Someone Like You",
       artist: "Adele",
-      key: "A major",
-      chordProgression: "I - V - VI - IV",
+      key: "A",
+      scale: "Major",
+      chordProgression: "I-V-VI-IV",
       cover: Adele
     },
     {
       title: "No Woman No Cry",
       artist: "Bob Marley",
-      key: "C Major",
-      chordProgression: "I - V - VI - IV" ,
+      key: "C",
+      scale: "Major",
+      chordProgression: "I-V-VI-IV" ,
       cover: BobMarley
     }
   ];

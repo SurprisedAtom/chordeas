@@ -15,9 +15,9 @@ function Main() {
 
   //get value from dropdows
 
-  const [keyValue, setKeyValue] = useState("");
-  const [scaleValue, setScaleValue] = useState("");
-  const [progressionValue, setProgressionValue] = useState("");
+  const [keyValue, setKeyValue] = useState("C");
+  const [scaleValue, setScaleValue] = useState("Major");
+  const [progressionValue, setProgressionValue] = useState("I-IV-V");
 
   const handleKeySelectChange = (event) => {
     const newValue = event.target.value;
