@@ -16,6 +16,7 @@ function MainInputs({
       <Container $width="100%">
         <p>Select a key: {keyValue}</p>
         <Dropdown name="key" id="key" value={keyValue} onChange={setKey}>
+          <Option value="">Please select a key</Option>
           <Option value="C">C</Option>
           <Option value="Db">Db</Option>
           <Option value="D">D</Option>
@@ -38,6 +39,7 @@ function MainInputs({
           value={scaleValue}
           onChange={setScale}
         >
+          <Option value="">Please select a scale</Option>
           <Option value="Major">Major</Option>
           <Option value="Natural-Minor">Natural Minor</Option>
           <Option value="Melodic-Minor">Melodic Minor</Option>
@@ -52,6 +54,7 @@ function MainInputs({
           value={progressionValue}
           onChange={setProgression}
         >
+          <Option value="">Please select a progression</Option>
           <Option value="I-IV-V">I - IV - V</Option>
           <Option value="VI-IV-I-V">VI - IV - I - V</Option>
           <Option value="I-V-VI-IV">I - V - VI - IV</Option>

@@ -15,9 +15,9 @@ function Main() {
 
   //get value from dropdows
 
-  const [keyValue, setKeyValue] = useState("C");
-  const [scaleValue, setScaleValue] = useState("Major");
-  const [progressionValue, setProgressionValue] = useState("I-IV-V");
+  const [keyValue, setKeyValue] = useState("");
+  const [scaleValue, setScaleValue] = useState("");
+  const [progressionValue, setProgressionValue] = useState("");
 
   const handleKeySelectChange = (event) => {
     const newValue = event.target.value;
@@ -35,7 +35,15 @@ function Main() {
   // send data using params
 
   const generateChord = () => {
-    navigate(`/result/${keyValue}/${scaleValue}/${progressionValue}`);
+    if (keyValue === "") {
+      alert("Please select a key");
+    } else if (scaleValue === "") {
+      alert("Please select a scale");
+    } else if (progressionValue === "") {
+      alert("Please select a progression");
+    } else {
+      navigate(`/result/${keyValue}/${scaleValue}/${progressionValue}`);
+    }
   };
 
   return (
