@@ -1,5 +1,6 @@
 import logo from "../../assets/logo-white.svg";
 import styled from "styled-components";
+import { device } from "../../utils/deviceSize";
 
 const Navbar = styled.div`
   display: flex;
@@ -14,6 +15,10 @@ const Navbar = styled.div`
     width: 100%;
     padding: 20px;
   }
+
+  @media ${device.sm} {
+    justify-content: center;
+  }
 `;
 
 function Nav() {
@@ -21,9 +26,6 @@ function Nav() {
     <Navbar>
       <div>
         <img src={logo} alt="Logo" />
-      </div>
-      <div>
-        <a href="#">How does this work?</a>
       </div>
     </Navbar>
   );
