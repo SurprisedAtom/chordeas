@@ -14,6 +14,8 @@ flex-direction: column;
 justify-content: flex-end;
 flex-grow: 1;
 
+
+
 p{
     font-weight: 300;
 }

@@ -25,7 +25,7 @@ function ChordVisualization(props) {
   return (
     <Container
       $display="flex"
-      $justify="space-between"
+      $justify="center"
       $mr="20px"
       $margin="40px 0px 0px 0px"
     >

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../utils/deviceSize";
 
 const Container = styled.div`
     padding: ${props => props.$padding};
@@ -20,6 +21,13 @@ const Container = styled.div`
         padding-left: ${props => props.$paddingleft};
     }
 
+    @media ${device.sm}{
+        padding: 0px;
+    }
+
+    @media ${device.lg}{
+        flex-direction: column;
+    }
 
 `;
 

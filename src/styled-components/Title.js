@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../utils/deviceSize";
 
 const Title = styled.h1`
   color: #ffffff;
@@ -14,6 +15,17 @@ const Title = styled.h1`
     color: #7FC1FE;
     font-weight: 400;
   }
+
+  @media ${device.md} {
+    font-size: 22px;
+    line-height: 2.5 rem;
+    text-align: center;
+    
+  }
+
+
+
+  
 
 `;
 

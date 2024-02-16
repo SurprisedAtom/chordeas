@@ -12,7 +12,7 @@ function MainInputs({
   progressionValue,
 }) {
   return (
-    <Flex $margin="40px 0px 0px 0px" $mr="10px">
+    <Flex $margin="40px 0px 0px 0px" $mr="10px" $align="end">
       <Container $width="100%">
         <p>Select a key: {keyValue}</p>
         <Dropdown name="key" id="key" value={keyValue} onChange={setKey}>

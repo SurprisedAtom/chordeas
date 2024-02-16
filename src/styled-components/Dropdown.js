@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../utils/deviceSize";
 
 export const Option = styled.option`
 `
@@ -15,6 +16,11 @@ export const Dropdown = styled.select`
 
     &:hover{
         cursor: pointer;
+    }
+
+    @media ${device.sm}{
+        margin-top: 10px;
+        margin-bottom: 40px;
     }
 
     
